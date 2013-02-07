@@ -1,0 +1,7 @@
+
+public class FileCombination {
+	String srcDirectory = null;
+	String[] separatedFiles;
+	String[][] separatedFilesAndSize;
+	
+}

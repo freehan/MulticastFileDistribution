@@ -1,0 +1,16 @@
+
+
+public class FileSeparation {
+
+	String fileName = null;
+	long fileSize = 0;
+	long blockNum = 0;
+	
+	public FileSeparation(){};
+	
+	public static void main(String[] args) {
+		System.out.println("Hellow World!");
+	}
+	
+
+}

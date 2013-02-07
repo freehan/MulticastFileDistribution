@@ -1,0 +1,4 @@
+
+public class FileCombination {
+	String srcDirectory=null;
+}
