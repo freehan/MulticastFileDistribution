@@ -80,7 +80,7 @@ public class FileSeparation {
 		return true;
 	}
 	
-	private boolean separateFile(String fileAndPath, long blockSize)
+	public boolean separateFile(String fileAndPath, long blockSize)
 	{
 		getFileAttribute(fileAndPath);
 		this.blockNum = getBlockNum(blockSize);		//Calculate Number of Part after separation
@@ -124,7 +124,7 @@ public class FileSeparation {
 //		System.out.println("Hellow World!");
 		FileSeparation separator = new FileSeparation();
 		String fileAndPath = "/Users/Freehan/Desktop/test/1.txt";
-		long blockSize = 1024;
+		long blockSize = 20*1024;
 		if(separator.separateFile(fileAndPath, blockSize))
 			System.out.println("Success");
 		else
