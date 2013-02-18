@@ -2,6 +2,7 @@ import sun.net.*;
 
 import java.io.IOException;
 import java.net.*;
+import java.nio.ByteBuffer;
 
 public class MulticastReceiver {
 
@@ -14,6 +15,9 @@ public class MulticastReceiver {
 	// Which address
 	static String group = "225.4.5.6";
 	
+	public static int fromByteArray(byte[] bytes) {
+	     return ByteBuffer.wrap(bytes).getInt();
+	}
 	
 	public static void main(String[] args) {
 		
@@ -30,13 +34,15 @@ public class MulticastReceiver {
 			
 			System.out.println("Start Listening");
 			s.receive(pack);
+			
+//			System.out.println(fromByteArray(pack.getData()));
 			// Finally, let us do something useful with the data we just received,
 			// like print it on stdout :-)
-			System.out.println("Received data from: " + pack.getAddress().toString() +
-					    ":" + pack.getPort() + " with length: " +
-					    pack.getLength());
-			System.out.write(pack.getData(),0,pack.getLength());
-			System.out.println();
+//			System.out.println("Received data from: " + pack.getAddress().toString() +
+//					    ":" + pack.getPort() + " with length: " +
+//					    pack.getLength());
+//			System.out.write(pack.getData(),0,pack.getLength());
+//			System.out.println();
 			// And when we have finished receiving data leave the multicast group and
 			// close the socket
 			s.leaveGroup(InetAddress.getByName(group));
