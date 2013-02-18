@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.*;
+import java.nio.ByteBuffer;
 
 public class FileSender {
 
@@ -24,6 +25,9 @@ public class FileSender {
 		this.group = group;
 		this.ttl = ttl;
 	};
+	
+	
+	
 	
 	public static boolean sendPackage(byte buf[])
 	{
@@ -54,17 +58,11 @@ public class FileSender {
 		
 	}
 	
-	public static byte[] intToByteArray(int i) throws Exception { 
-		ByteArrayOutputStream buf = new ByteArrayOutputStream(); 
-		DataOutputStream out = new DataOutputStream(buf); 
-//		System.out.println("i:" + i); 
-		out.writeInt(i); 
-		byte[] b = buf.toByteArray(); 
-//		System.out.println("i:" + b); 
-		out.close(); 
-		buf.close(); 
-		return b; 
-	} 
+	
+	public static byte[] intToByteArray(int value) {
+	     return  ByteBuffer.allocate(4).putInt(value).array();
+	}
+
 	
 	public static void main(String[] args) {
 

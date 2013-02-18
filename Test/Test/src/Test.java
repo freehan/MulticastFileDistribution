@@ -81,6 +81,10 @@ public class Test {
 
 		byte[] tmp = toByteArray2(-2123123123);
 		System.out.println(fromByteArray2(tmp));
+<<<<<<< HEAD
+=======
+		
+>>>>>>> new_branch_name
 		
 		
 	}

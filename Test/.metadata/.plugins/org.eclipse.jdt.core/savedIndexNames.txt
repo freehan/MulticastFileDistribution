@@ -1,4 +1,12 @@
 INDEX VERSION 1.126+F:\Coding\WorkSpace\MasterProject\MulticastFileDistribution\Test\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< HEAD
+=======
+1657330681.index
+3780300499.index
+>>>>>>> new_branch_name
 3971160118.index
 1591792438.index
 4105732621.index
+4038052198.index
+3454240507.index
+1591792438.index
