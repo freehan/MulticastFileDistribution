@@ -1,7 +1,4 @@
 INDEX VERSION 1.126+F:\Coding\WorkSpace\MasterProject\MulticastFileDistribution\Test\.metadata\.plugins\org.eclipse.jdt.core
-1591792438.index
-3454240507.index
-3780300499.index
 3971160118.index
-1657330681.index
+1591792438.index
 4105732621.index
