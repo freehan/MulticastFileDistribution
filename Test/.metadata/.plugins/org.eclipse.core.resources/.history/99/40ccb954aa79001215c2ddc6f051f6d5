@@ -79,9 +79,8 @@ public class Test {
 //		
 //		byte[] tmp = intToByteArray(1);
 
-		byte[] tmp = toByteArray2(-2123123123);
+		byte[] tmp = toByteArray2(2123123123);
 		System.out.println(fromByteArray2(tmp));
-		
 		
 		
 	}
