@@ -51,11 +51,11 @@ public class Test {
 		return buf.read(); 
 	}
 	
-	public static byte[] toByteArray(int value) {
+	byte[] toByteArray(int value) {
 	     return  ByteBuffer.allocate(4).putInt(value).array();
 	}
 
-	public static byte[] toByteArray2(int value) {
+	byte[] toByteArray2(int value) {
 	    return new byte[] {
 	        (byte) (value >> 24),
 	        (byte) (value >> 16),
@@ -63,11 +63,11 @@ public class Test {
 	        (byte) value};
 	}
 
-	public static int fromByteArray(byte[] bytes) {
+	int fromByteArray(byte[] bytes) {
 	     return ByteBuffer.wrap(bytes).getInt();
 	}
 
-	public static int fromByteArray2(byte[] bytes) {
+	int fromByteArray2(byte[] bytes) {
 	     return bytes[0] << 24 | (bytes[1] & 0xFF) << 16 | (bytes[2] & 0xFF) << 8 | (bytes[3] & 0xFF);
 	}
 	
@@ -79,8 +79,8 @@ public class Test {
 //		
 //		byte[] tmp = intToByteArray(1);
 
-		byte[] tmp = toByteArray2(-2123123123);
-		System.out.println(fromByteArray2(tmp));
+		byte[] tmp = t
+		System.out.println();
 		
 		
 	}
