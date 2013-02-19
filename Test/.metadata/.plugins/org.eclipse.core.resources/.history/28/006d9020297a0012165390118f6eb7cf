@@ -1,0 +1,36 @@
+import java.io.File;
+
+
+public class FileSeperator {
+	
+	String fileName = null;
+	long fileSize = 0;
+	long blockNum = 0;
+	long blockSize = 1024;
+	
+	
+	public FileSeperator(){};
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	private void getFileAttribute(String fileAndPath){
+		File file = new File(fileAndPath);
+		fileName = file.getName();
+		fileSize = file.length();
+	}
+	
+
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}
