@@ -74,25 +74,15 @@ public class Test {
 	public static void main(String[] args) throws Exception {
 		System.out.println("check");
 		
-<<<<<<< HEAD
+
 		byte[] buf = new byte[1000];
 		
 		
 		byte[] tmp = intToByteArray(1);
-=======
-//		byte[] buf = new byte[1000];
-//		
-//		
-//		byte[] tmp = intToByteArray(1);
 
-		byte[] tmp = toByteArray2(-2123123123);
+
+		byte[] tmp2 = toByteArray2(-2123123123);
 		System.out.println(fromByteArray2(tmp));
-<<<<<<< HEAD
-=======
-		
->>>>>>> new_branch_name
-		
->>>>>>> 0a9ef02d9612d4166d7c7dd21711a8af62360a42
 		
 	}
 

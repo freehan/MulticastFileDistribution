@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="25" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="22">
 <fastViewData fastViewLocation="1024"/>
@@ -34,24 +34,44 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileSeparation.java" partName="FileSeparation.java" path="/Users/Freehan/Documents/Coding/MasterProject/Test/FileSeparation/src/FileSeparation.java" title="FileSeparation.java" tooltip="FileSeparation/src/FileSeparation.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileSeparation.java" partName="FileSeparation.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/FileSeparation/src/FileSeparation.java" title="FileSeparation.java" tooltip="FileSeparation/src/FileSeparation.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FileSeparation/src/FileSeparation.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1655" selectionTopPixel="1687"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1267" selectionTopPixel="1960"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileCombination.java" partName="FileCombination.java" path="/Users/Freehan/Documents/Coding/MasterProject/Test/FileCombination/src/FileCombination.java" title="FileCombination.java" tooltip="FileCombination/src/FileCombination.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileCombination.java" partName="FileCombination.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/FileCombination/src/FileCombination.java" title="FileCombination.java" tooltip="FileCombination/src/FileCombination.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FileCombination/src/FileCombination.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1389" selectionTopPixel="649"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2581" selectionTopPixel="1447"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/Test/src/Test.java" title="Test.java" tooltip="Test/src/Test.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Test/src/Test.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2001" selectionTopPixel="1124"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileSeperator.java" partName="FileSeperator.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/FileSeperator.java" title="FileSeperator.java" tooltip="ReliableMulticastFileDistribution/src/FileSeperator.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/FileSeperator.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3476" selectionTopPixel="3807"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileSender.java" partName="FileSender.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/FileSender.java" title="FileSender.java" tooltip="ReliableMulticastFileDistribution/src/FileSender.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/FileSender.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="27" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MulticastSender.java" partName="MulticastSender.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/MulticastSendSocket/src/MulticastSender.java" title="MulticastSender.java" tooltip="MulticastSendSocket/src/MulticastSender.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MulticastSendSocket/src/MulticastSender.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings (11 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -65,7 +85,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
-<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<viewState group_libraries="1" layout="2" linkWithEditor="1" rootMode="1" workingSetName="">
 <customFilters userDefinedPatternsEnabled="false">
 <xmlDefinedFilters>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
@@ -262,158 +282,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/FileSeperator.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FileSeparation/src/FileSeparation.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/FileCombination/src/FileCombination.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/FileSender.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MulticastSendSocket/src/MulticastSender.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Test/src/Test.java"/>
 </editors>
-<item historyLabel="FileSeparation.java" index="0">
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3308" y="0"/>
+</item>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="2982" y="0"/>
+</item>
+<item historyLabel="FileSeparation.java" index="1">
+<position info="not_deleted" x="2718" y="0"/>
+</item>
+<item historyLabel="FileSeperator.java" index="0">
 <position/>
 </item>
-<item historyLabel="FileSeparation.java" index="0">
-<position info="not_deleted" x="2482" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileSeparation.java" index="0">
-<position info="not_deleted" x="1197" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileSeparation.java" index="0">
-<position info="not_deleted" x="2744" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1452" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileSeparation.java" index="0">
-<position info="not_deleted" x="120" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1452" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3345" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="211" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="213" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1452" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="276" y="0"/>
+<item historyLabel="FileSeparation.java" index="1">
+<position info="not_deleted" x="1260" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1455" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3299" y="0"/>
 </item>
-<item historyLabel="FileSeparation.java" index="0">
-<position info="not_deleted" x="120" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3516" y="0"/>
 </item>
-<item historyLabel="FileSeparation.java" index="0">
-<position info="not_deleted" x="368" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3582" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1455" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3459" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="360" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="2966" y="24"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="418" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3439" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="448" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3459" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="512" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3422" y="18"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="595" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3751" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="585" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3750" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="594" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3784" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="597" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="2966" y="24"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="572" y="4"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="4586" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="651" y="0"/>
+<item historyLabel="FileSeparation.java" index="1">
+<position info="not_deleted" x="1032" y="44"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="688" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="4586" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="FileSeparation.java" index="1">
+<position info="not_deleted" x="1032" y="44"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="847" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="4582" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="847" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="4312" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="850" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="4365" y="11"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="881" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="4340" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1103" y="0"/>
+<item historyLabel="FileSeparation.java" index="1">
+<position info="not_deleted" x="1094" y="3"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="855" y="6"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="4340" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="961" y="0"/>
+<item historyLabel="FileCombination.java" index="2">
+<position info="not_deleted" x="2547" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="990" y="0"/>
+<item historyLabel="FileSeparation.java" index="1">
+<position info="not_deleted" x="1267" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="993" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3777" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1013" y="0"/>
+<item historyLabel="FileSender.java" index="3">
+<position info="not_deleted" x="29" y="26"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1042" y="0"/>
+<item historyLabel="MulticastSender.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1045" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3476" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1092" y="0"/>
+<item historyLabel="FileCombination.java" index="2">
+<position info="not_deleted" x="2581" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1047" y="0"/>
+<item historyLabel="Test.java" index="5">
+<position info="not_deleted" x="2001" y="0"/>
 </item>
-<item historyLabel="FileSeparation.java" index="0">
-<position info="not_deleted" x="1655" y="0"/>
+<item historyLabel="FileSeperator.java" index="0">
+<position info="not_deleted" x="3476" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1047" y="0"/>
+<item historyLabel="FileSender.java" index="3">
+<position info="not_deleted" x="29" y="26"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1207" y="0"/>
+<item historyLabel="MulticastSender.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1289" y="0"/>
-</item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1309" y="0"/>
-</item>
-<item historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1415" y="0"/>
-</item>
-<item active="true" historyLabel="FileCombination.java" index="1">
-<position info="not_deleted" x="1382" y="0"/>
+<item active="true" historyLabel="FileSender.java" index="3">
+<position info="not_deleted" x="29" y="26"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -421,13 +445,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@65ddc55f"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -436,11 +453,22 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MulticastSender.java" tooltip="MulticastSendSocket/src/MulticastSender.java">
+<persistable path="/MulticastSendSocket/src/MulticastSender.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileSender.java" tooltip="ReliableMulticastFileDistribution/src/FileSender.java">
+<persistable path="/ReliableMulticastFileDistribution/src/FileSender.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileSeperator.java" tooltip="ReliableMulticastFileDistribution/src/FileSeperator.java">
+<persistable path="/ReliableMulticastFileDistribution/src/FileSeperator.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="Test/src/Test.java">
+<persistable path="/Test/src/Test.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileCombination.java" tooltip="FileCombination/src/FileCombination.java">
 <persistable path="/FileCombination/src/FileCombination.java"/>
 </file>

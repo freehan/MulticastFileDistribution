@@ -6,7 +6,8 @@ public class Sender {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		FileSender fileSender = new FileSender();
+		fileSender.sendStdPacket(5, null);
 	}
 
 }

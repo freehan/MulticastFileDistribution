@@ -35,7 +35,7 @@ public class MulticastReceiver {
 			System.out.println("Start Listening");
 			s.receive(pack);
 			
-//			System.out.println(fromByteArray(pack.getData()));
+			System.out.println(fromByteArray(pack.getData()));
 			// Finally, let us do something useful with the data we just received,
 			// like print it on stdout :-)
 //			System.out.println("Received data from: " + pack.getAddress().toString() +

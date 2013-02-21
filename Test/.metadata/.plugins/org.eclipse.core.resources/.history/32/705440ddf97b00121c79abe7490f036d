@@ -1,0 +1,19 @@
+
+public class FileSender {
+
+	// Import some needed classes
+
+	// Which port should we listen to
+	static int port = 5000;
+	// Which address
+	static String group = "225.4.5.6";
+	// Which ttl
+	static int ttl = 1;
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

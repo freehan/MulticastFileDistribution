@@ -1,0 +1,71 @@
+import java.io.IOException;
+import java.net.MulticastSocket;
+
+
+public class FileSender {
+
+	// Import some needed classes
+
+	// Which port should we listen to
+	static int port = 5000;
+	
+	// Which address
+	static String group = "225.4.5.6";
+	// Which ttl
+	static int ttl = 1;
+
+	MulticastSocket soc;
+	
+	
+	public FileSender(){
+		try {
+			soc = new MulticastSocket();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("CANNOT CREATE Multicast Socket");
+		}
+	}
+	
+	protected void finalize()
+	{
+		soc.close();
+		System.out.println("Multicast Socket closed");
+	};
+	
+	public static int getPort() {
+		return port;
+	}
+
+
+	public static void setPort(int port) {
+		FileSender.port = port;
+	}
+
+
+	public static String getGroup() {
+		return group;
+	}
+
+
+	public static void setGroup(String group) {
+		FileSender.group = group;
+	}
+
+
+	public static int getTtl() {
+		return ttl;
+	}
+
+
+	public static void setTtl(int ttl) {
+		FileSender.ttl = ttl;
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
