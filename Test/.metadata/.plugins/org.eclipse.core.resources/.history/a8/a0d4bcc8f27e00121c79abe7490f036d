@@ -1,0 +1,33 @@
+import java.io.IOException;
+
+
+public class FileCombiner extends FileSeperator {
+
+	int lastSeqNum;
+	
+	public FileCombiner(String FileName, long blockNum, int lastSeqNum){
+		super(FileName, blockNum);
+		this.lastSeqNum = lastSeqNum;
+	};
+	
+	public boolean writeByte(byte[] buf, int offset, int length){
+		
+		try {
+			this.raf.write(buf, offset, length);
+			return true;
+		} catch (IOException e) {
+			return false;
+			
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileCombiner fc = new FileCombiner();
+		
+		
+	}
+
+}

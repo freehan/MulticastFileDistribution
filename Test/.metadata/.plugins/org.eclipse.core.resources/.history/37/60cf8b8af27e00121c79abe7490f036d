@@ -1,0 +1,19 @@
+
+public class FileCombiner extends FileSeperator {
+
+	int lastSeqNum;
+	
+	public FileCombiner(String FileName, long blockNum, int lastSeqNum){
+		super(FileName, blockNum);
+		
+		
+	};
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileCombiner fc = new FileCombiner();
+		
+		
+	}
+
+}

@@ -13,8 +13,12 @@ public class FileSeperator {
 	long blockSize = 544; 	//According to optimal UDP packet size
 	RandomAccessFile raf = null;
 	
-	public FileSeperator(){};
 	
+	public FileSeperator(){
+		System.out.println("FileSeperator Default Constructor");
+	};
+	
+	//FOR SENDER WITH COMPLETE FILE
 	public FileSeperator(String fileName)
 	{
 		try {
@@ -24,8 +28,22 @@ public class FileSeperator {
 			System.out.println("File Not Found!");
 			e.printStackTrace();
 		}
-		
 	};
+	
+	//FOR RECEIVER who need FILE COMBINER 
+	public FileSeperator(String fileName, long blockNum)
+	{
+		try {
+			this.fileName = fileName;
+			this.blockNum = blockNum;
+			raf = new RandomAccessFile(fileName, "rw");
+		} catch (FileNotFoundException e) {
+			System.out.println("File Not Found!");
+			e.printStackTrace();
+		}
+	};
+	
+	
 	
 	protected void finalize()
 	{
