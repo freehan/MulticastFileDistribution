@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -8,12 +9,16 @@ public class FileSeperator {
 	
 	String fileName = null;
 	long fileSize = 0;
-	long blockNum = 0;
-	long blockSize = 543; //According to optimal UDP packet size
+	long blockNum = 0;		//How many blocks could this file be seperated to according to the blockSize;
+	long blockSize = 544; 	//According to optimal UDP packet size
 	RandomAccessFile raf = null;
 	
-	public FileSeperator(){};
 	
+	public FileSeperator(){
+		System.out.println("FileSeperator Default Constructor");
+	};
+	
+	//FOR SENDER WITH COMPLETE FILE
 	public FileSeperator(String fileName)
 	{
 		try {
@@ -23,8 +28,23 @@ public class FileSeperator {
 			System.out.println("File Not Found!");
 			e.printStackTrace();
 		}
-		
 	};
+	
+	//FOR RECEIVER who need FILE COMBINER 
+	public FileSeperator(String fileName, long blockNum)
+	{
+		try {
+			this.fileName = fileName;
+			this.blockNum = blockNum;
+			raf = new RandomAccessFile(fileName, "rw");
+		} catch (FileNotFoundException e) {
+			System.out.println("File Not Found!");
+			e.printStackTrace();
+		}
+	};
+	
+	
+	
 	protected void finalize()
 	{
 		try {
@@ -36,7 +56,42 @@ public class FileSeperator {
 		}
 		
 	};
+	
+	public String getFileName() {
+		return fileName;
+	}
 
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+		try {
+			raf.close();
+			raf = new RandomAccessFile(this.fileName, "r");
+		}
+		catch (FileNotFoundException e) {
+			System.out.println("File Not Found!");
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.err.println("RandomAccessFile raf has not been initialized yet");
+			e.printStackTrace();
+		}
+	}
+
+	public long getFileSize() {
+		return fileSize;
+	}
+
+	public void setFileSize(long fileSize) {
+		this.fileSize = fileSize;
+	}
+
+	
+	public long getBlockNum() {
+		return blockNum;
+	}
+
+	public void setBlockNum(long blockNum) {
+		this.blockNum = blockNum;
+	}
 	
 	public long getBlockSize() {
 		return blockSize;
@@ -46,14 +101,7 @@ public class FileSeperator {
 		this.blockSize = blockSize;
 	}
 
-	public String getFileName() {
-		return fileName;
-	}
-
-	public void setFileName(String fileName) {
-		this.fileName = fileName;
-	}
-
+	// Calculate Total Number of Blocks could be generated according to the blocksize
 	public long getBlockNum(long blockSize){
 		if(this.fileSize <= blockSize)
 			return 1;
@@ -68,16 +116,14 @@ public class FileSeperator {
 	public void getFileAttribute(){
 		File file = new File(this.fileName);
 		this.fileName = file.getName();
-		this.fileSize = file.length();
-		
+		this.fileSize = file.length();		
 		this.blockNum = getBlockNum(this.blockSize);
 	}
 	
 	public void getFileAttribute(String fileAndPath){
 		File file = new File(fileAndPath);
 		this.fileName = file.getName();
-		this.fileSize = file.length();
-		
+		this.fileSize = file.length();	
 		this.blockNum = getBlockNum(this.blockSize);
 	}
 	
@@ -89,14 +135,80 @@ public class FileSeperator {
 		System.out.println("Block Size: " + this.blockSize);
 	}
 	
+	public static int safeLongToInt(long l) {
+	    if (l < Integer.MIN_VALUE || l > Integer.MAX_VALUE) {
+	        throw new IllegalArgumentException
+	            (l + " cannot be cast to int without changing its value.");
+	    }
+	    return (int) l;
+	}
+	
+	public byte[] getDataBlock(int seqNum){
+		
+		long blockSizeNeedToRead = this.getBlockSize();;
+		long read_poz = 0;
+		
+		read_poz = this.getBlockSize()*(seqNum-1);
+		
+		if(blockNum==1)
+			blockSizeNeedToRead = this.getFileSize();
+		else if(seqNum == this.getBlockNum())
+			blockSizeNeedToRead = this.getFileSize() - this.getBlockSize()*(this.getBlockNum()-1);
+		
+		try{
+			int bufferSize = safeLongToInt(blockSizeNeedToRead);
+			byte[] buf = new byte[bufferSize];
+			
+			raf.seek(read_poz);
+			raf.read(buf);		
+			return buf;
+			
+		}catch(IllegalArgumentException e)
+		{
+			e.printStackTrace();
+			System.err.println(e.getMessage());
+			return null;
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.err.println("CANNOT SEEK TO THE READ POSITION");
+			return null;
+			
+		}
+	}
+	
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		FileSeperator fs = new FileSeperator("C:\\Users\\Minhan\\Dropbox\\MasterProject\\design.docx");
+		//FileSeperator fs = new FileSeperator("C:\\Users\\Minhan\\Dropbox\\MasterProject\\design.docx");
+		FileSeperator fs = new FileSeperator("/Users/Freehan/Desktop/Test/1.txt");
+		fs.setBlockSize((long)50*1024);
 		fs.getFileAttribute();
 		fs.printFileAttribute();
+		
+		
+		
+		FileOutputStream fos = null;
+		for(int i=1;i<=3;i++)
+		{
+			try {
+				fos = new FileOutputStream("/Users/Freehan/Desktop/Test/1.txt.part"+Integer.toString(i));
+				
+				byte[] buf = fs.getDataBlock(i);
+				fos.write(buf);
+				fos.close();
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
 		
 	}
 }
