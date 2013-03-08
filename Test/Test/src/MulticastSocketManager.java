@@ -3,13 +3,75 @@ import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
+import java.util.HashMap;
+import java.util.Vector;
 
 
-public class MulticastSocketManager {
+public class MulticastSocketManager implements Runnable {
 
-	/**
-	 * @param args
-	 */
+	Thread t;
+	Vector<Integer> test;
+	HashMap<Integer,String> map;
+	
+	synchronized public void put(int key, String value)
+	{
+		map.put(key, value);
+		
+	}
+	
+	synchronized public String get(int key)
+	{
+		return (String)map.get((int)key);
+	}
+	
+	public void startRun()
+	{
+		map = new HashMap<Integer, String>();
+		t = new Thread(this, "Demo Thread");
+		System.out.println("Child thread" + t);
+		t.start();	
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("check");
+		int index = 0;
+		
+		for(;;)
+		{
+			String tmp = get(index);
+			if(tmp==null)
+				try {
+				
+					Thread.currentThread();
+					Thread.sleep(10000);	
+//					Thread.currentThread().wait();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					//e.printStackTrace();
+					
+					System.out.println("interrupted");
+				}
+			else{
+				System.out.println(tmp);
+				index++;
+			}
+			
+			if(index>=10)
+				break;
+		}
+		System.out.println("END");
+		
+	}
+	public void kickThread()
+	{
+		t.interrupt();
+//		t.notify();
+	}
+	
+	public MulticastSocketManager(){};
 		
 	public static byte[] intToByteArray(int i) throws Exception { 
 		ByteArrayOutputStream buf = new ByteArrayOutputStream(); 
@@ -73,24 +135,27 @@ public class MulticastSocketManager {
 	}
 	
 	public static void main(String[] args) throws Exception {
-//		System.out.println("check");
-//		
-//
-//		byte[] buf = new byte[1000];
-//		
-//		
-//		byte[] tmp = intToByteArray(1);
-//
-//
-//		byte[] tmp2 = toByteArray2(-2123123123);
-//		System.out.println(fromByteArray2(tmp));
+
+		MulticastSocketManager msm = new MulticastSocketManager();
+		msm.startRun();
+		Thread.currentThread().sleep(1000);
 		
-		RandomAccessFile raf1 = new RandomAccessFile("/Users/Freehan/Desktop/Test/test.txt", "rw");
-		RandomAccessFile raf2 = new RandomAccessFile("/Users/Freehan/Desktop/Test/test.txt", "rw");
+		for(int i=0;i<10;i++)
+		{
+			msm.put(i,"value"+Integer.toString(i));
+			
+			Thread.currentThread().sleep(1000);
+			
+			msm.kickThread();
+		}
+		
+		
 		
 		
 		
 	}
+
+
 
 
 }
