@@ -7,7 +7,9 @@ public class Sender {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		FileSeperator sep = new FileSeperator("/Users/Freehan/Desktop/Test/1.txt");
+//		FileSeperator sep = new FileSeperator("/Users/Freehan/Desktop/Test/1.txt");
+		
+		FileSeperator sep = new FileSeperator("C:\\Users\\Minhan\\Desktop\\IE9-Windows7-x64-enu.exe");
 		sep.getFileAttribute();
 		sep.printFileAttribute();
 		
@@ -28,8 +30,6 @@ public class Sender {
 			
 			seqNum++;
 		}
-		
-		
 		Sender.finalize();		
 	}
 
