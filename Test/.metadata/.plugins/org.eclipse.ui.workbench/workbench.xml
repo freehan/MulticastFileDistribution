@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="34" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="22">
 <fastViewData fastViewLocation="1024"/>
@@ -61,7 +61,7 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SocketManager.java" partName="SocketManager.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/SocketManager.java" title="SocketManager.java" tooltip="ReliableMulticastFileDistribution/src/SocketManager.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/SocketManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="862" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="708" selectionTopPixel="2771"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MulticastSender.java" partName="MulticastSender.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/MulticastSendSocket/src/MulticastSender.java" title="MulticastSender.java" tooltip="MulticastSendSocket/src/MulticastSender.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MulticastSendSocket/src/MulticastSender.java"/>
@@ -75,21 +75,21 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MulticastRecieveSocket/src/MulticastReceiver.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="358" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sender.java" partName="Sender.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/Sender.java" title="Sender.java" tooltip="ReliableMulticastFileDistribution/src/Sender.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sender.java" partName="Sender.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/Sender.java" title="Sender.java" tooltip="ReliableMulticastFileDistribution/src/Sender.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/Sender.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="553" selectionTopPixel="10"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="553" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileCombiner.java" partName="FileCombiner.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/FileCombiner.java" title="FileCombiner.java" tooltip="ReliableMulticastFileDistribution/src/FileCombiner.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileCombiner.java" partName="FileCombiner.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/FileCombiner.java" title="FileCombiner.java" tooltip="ReliableMulticastFileDistribution/src/FileCombiner.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/FileCombiner.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="999" selectionTopPixel="665"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1271" selectionTopPixel="706"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Receiver.java" partName="Receiver.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/Receiver.java" title="Receiver.java" tooltip="ReliableMulticastFileDistribution/src/Receiver.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/Receiver.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="400" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="771" selectionTopPixel="129"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MulticastSocketManager.java" partName="MulticastSocketManager.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/Test/src/MulticastSocketManager.java" title="MulticastSocketManager.java" tooltip="Test/src/MulticastSocketManager.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Test/src/MulticastSocketManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2004" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3299" selectionTopPixel="2314"/>
 </editor>
 </editors>
 <views>
@@ -314,168 +314,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/Sender.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/SocketManager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MulticastRecieveSocket/src/MulticastReceiver.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/FileCombiner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/FileCombiner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MulticastRecieveSocket/src/MulticastReceiver.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MulticastRecieveSocket/src/MulticastReceiver.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/Receiver.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/FileCombiner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/FileSeperator.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Test/src/MulticastSocketManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/FileCombiner.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/Receiver.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/SocketManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/Sender.java"/>
 </editors>
-<item historyLabel="SocketManager.java" index="1">
-<position info="not_deleted" x="811" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="294" y="5"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="493" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="533" y="0"/>
 </item>
-<item historyLabel="MulticastReceiver.java" index="2">
-<position info="not_deleted" x="370" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="293" y="6"/>
 </item>
-<item historyLabel="SocketManager.java" index="1">
-<position info="not_deleted" x="811" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="338" y="0"/>
 </item>
-<item historyLabel="MulticastReceiver.java" index="2">
-<position info="not_deleted" x="370" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="316" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="493" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="316" y="7"/>
 </item>
-<item historyLabel="FileCombiner.java" index="3">
-<position info="not_deleted" x="1555" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="648" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="489" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="340" y="1"/>
 </item>
-<item historyLabel="FileCombiner.java" index="3">
-<position info="not_deleted" x="1555" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="398" y="0"/>
 </item>
-<item historyLabel="FileCombiner.java" index="3">
-<position info="not_deleted" x="1479" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="486" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="581" y="0"/>
 </item>
-<item historyLabel="FileCombiner.java" index="3">
-<position info="not_deleted" x="1283" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="583" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="486" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="423" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="507" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="507" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="885" y="0"/>
 </item>
-<item historyLabel="FileCombiner.java" index="4">
-<position info="not_deleted" x="1280" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="444" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="852" y="0"/>
 </item>
-<item historyLabel="FileCombiner.java" index="4">
-<position info="not_deleted" x="1436" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="921" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="206" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="923" y="13"/>
 </item>
-<item historyLabel="FileCombiner.java" index="4">
-<position info="not_deleted" x="1121" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="3204" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="589" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
 </item>
-<item historyLabel="FileCombiner.java" index="4">
-<position info="not_deleted" x="1458" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="589" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="3299" y="0"/>
 </item>
-<item historyLabel="FileCombiner.java" index="4">
-<position info="not_deleted" x="1511" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="3298" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="589" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
 </item>
-<item historyLabel="MulticastReceiver.java" index="5">
-<position info="not_deleted" x="370" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="403" y="22"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="618" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
 </item>
-<item historyLabel="MulticastReceiver.java" index="6">
-<position info="not_deleted" x="370" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
 </item>
-<item historyLabel="Receiver.java" index="7">
-<position info="not_deleted" x="409" y="0"/>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="403" y="22"/>
 </item>
-<item historyLabel="FileCombiner.java" index="8">
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="428" y="0"/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="3338" y="0"/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="403" y="22"/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="1361" y="0"/>
+</item>
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="FileCombiner.java" index="1">
+<position info="not_deleted" x="999" y="3"/>
+</item>
+<item historyLabel="Receiver.java" index="2">
+<position info="not_deleted" x="771" y="0"/>
+</item>
+<item historyLabel="FileCombiner.java" index="1">
 <position info="not_deleted" x="1402" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="608" y="0"/>
+<item historyLabel="Receiver.java" index="2">
+<position info="not_deleted" x="771" y="0"/>
 </item>
-<item historyLabel="FileCombiner.java" index="8">
-<position info="not_deleted" x="1156" y="0"/>
+<item historyLabel="FileCombiner.java" index="1">
+<position info="not_deleted" x="1271" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="0">
+<item historyLabel="MulticastSocketManager.java" index="0">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="SocketManager.java" index="3">
+<position info="not_deleted" x="708" y="0"/>
+</item>
+<item active="true" historyLabel="Sender.java" index="4">
 <position info="not_deleted" x="553" y="0"/>
-</item>
-<item historyLabel="MulticastReceiver.java" index="6">
-<position info="not_deleted" x="370" y="0"/>
-</item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="553" y="0"/>
-</item>
-<item historyLabel="FileCombiner.java" index="8">
-<position info="not_deleted" x="1156" y="0"/>
-</item>
-<item historyLabel="FileSeperator.java" index="9">
-<position info="not_deleted" x="4291" y="0"/>
-</item>
-<item historyLabel="Sender.java" index="0">
-<position info="not_deleted" x="553" y="0"/>
-</item>
-<item historyLabel="MulticastReceiver.java" index="6">
-<position info="not_deleted" x="358" y="0"/>
-</item>
-<item historyLabel="FileCombiner.java" index="8">
-<position info="not_deleted" x="1156" y="0"/>
-</item>
-<item historyLabel="Receiver.java" index="7">
-<position info="not_deleted" x="400" y="0"/>
-</item>
-<item historyLabel="MulticastSocketManager.java" index="10">
-<position info="not_deleted" x="2136" y="0"/>
-</item>
-<item historyLabel="SocketManager.java" index="11">
-<position info="not_deleted" x="862" y="0"/>
-</item>
-<item historyLabel="FileCombiner.java" index="8">
-<position info="not_deleted" x="1156" y="0"/>
-</item>
-<item historyLabel="FileSeperator.java" index="9">
-<position info="not_deleted" x="4557" y="0"/>
-</item>
-<item historyLabel="FileCombiner.java" index="8">
-<position info="not_deleted" x="1156" y="0"/>
-</item>
-<item historyLabel="FileCombiner.java" index="8">
-<position info="not_deleted" x="157" y="0"/>
-</item>
-<item historyLabel="FileCombiner.java" index="8">
-<position/>
-</item>
-<item historyLabel="Receiver.java" index="7">
-<position info="not_deleted" x="400" y="0"/>
-</item>
-<item active="true" historyLabel="FileCombiner.java" index="8">
-<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -483,6 +476,13 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@65ddc55f"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -491,10 +491,14 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Thread.class" tooltip="java.lang.Thread">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FileCombination/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.lang(Thread.class"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="DatagramSocket.class" tooltip="java.net.DatagramSocket">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FileCombination/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.net(DatagramSocket.class"/>
 </file>
@@ -536,9 +540,6 @@
 </file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Exception.class" tooltip="java.lang.Exception">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FileSeparation/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.lang(Exception.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileSeparation.java" tooltip="FileSeparation/src/FileSeparation.java">
-<persistable path="/FileSeparation/src/FileSeparation.java"/>
 </file>
 </mruList>
 </workbench>
