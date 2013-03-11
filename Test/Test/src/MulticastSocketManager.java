@@ -5,6 +5,7 @@ import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.Vector;
+import java.util.concurrent.TimeUnit;
 
 
 public class MulticastSocketManager implements Runnable {
@@ -144,7 +145,9 @@ public class MulticastSocketManager implements Runnable {
 		{
 			msm.put(i,"value"+Integer.toString(i));
 			
-			Thread.currentThread().sleep(1000);
+			//Thread.currentThread().sleep(1000);
+			TimeUnit.NANOSECONDS.sleep(1000000000);
+		
 			
 			msm.kickThread();
 		}

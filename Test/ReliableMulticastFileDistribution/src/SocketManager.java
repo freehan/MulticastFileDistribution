@@ -118,7 +118,7 @@ public class SocketManager {
 	}
 	
 	//Standard Packet is 
-	public static boolean sendStdPacket(int seqNum, byte [] buf){
+	public boolean sendStdPacket(int seqNum, byte [] buf){
 		byte[] seq = intToByteArray(seqNum);
 		byte[] payload = null;
 		
