@@ -153,9 +153,6 @@ public class MulticastSocketManager implements Runnable {
 		}
 		
 		
-		
-		
-		
 	}
 
 

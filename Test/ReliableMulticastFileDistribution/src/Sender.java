@@ -13,24 +13,25 @@ public class Sender {
 		sep.getFileAttribute();
 		sep.printFileAttribute();
 		
-		SocketManager Sender = new SocketManager();
-		
-		int seqNum=1;
-		while(seqNum<=sep.getBlockNum())
-		{
-			try {
-				Thread.sleep(1);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			byte[] buf = sep.getDataBlock(seqNum);
-			
-			Sender.sendStdPacket(seqNum, buf);
-			
-			seqNum++;
-		}
-		Sender.finalize();		
+//		SocketManager Sender = new SocketManager();
+//		
+//		
+//		int seqNum=1;
+//		while(seqNum<=sep.getBlockNum())
+//		{
+//			try {
+//				Thread.sleep(1);
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			byte[] buf = sep.getDataBlock(seqNum);
+//			
+//			Sender.sendStdPacket(seqNum, buf);
+//			
+//			seqNum++;
+//		}
+//		Sender.finalize();		
 	}
 
 }

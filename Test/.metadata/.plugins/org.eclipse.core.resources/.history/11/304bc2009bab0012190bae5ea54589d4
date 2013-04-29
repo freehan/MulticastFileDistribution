@@ -1,0 +1,44 @@
+import java.io.FileOutputStream;
+import java.net.DatagramPacket;
+import java.util.Arrays;
+
+
+public class Tester {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SocketManager sm = new SocketManager();
+		FileSeperator fs = new FileSeperator("/Users/Freehan/Desktop/Test/Test");
+		fs.getFileAttribute();
+		//fs.printFileAttribute();
+		
+		
+		
+		sm.sendStdPacket(-123, null);
+		
+		DatagramPacket pack = sm.recievePacket();
+		
+		System.out.println("Waiting");
+		byte[] buf1 = fs.getDataBlock(123);
+		byte[] buf2 = SocketManager.getPacketData(pack);
+		System.out.println(buf1.length);
+		System.out.println(buf1.length);
+		
+		int a = SocketManager.byteArrayToInt2(buf1);
+		//int b = SocketManager.byteArrayToInt2(buf2);
+
+		System.out.println(a + "   ");
+		
+		
+		if(Arrays.equals(buf1, buf2))
+			System.out.println("first byte The Same");
+		
+		
+		
+	
+	}
+
+}

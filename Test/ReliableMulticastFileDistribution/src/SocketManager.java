@@ -133,6 +133,8 @@ public class SocketManager {
 //			soc.setTimeToLive(ttl);
 			DatagramPacket pack = new DatagramPacket(payload, payload.length,
 					 InetAddress.getByName(group), port);
+//			System.out.println("Sending Packet Seq"+ seqNum + "  payload length: " +payload.length);
+			
 			soc.send(pack);
 			return true;
 		} catch (IOException e) {
@@ -176,10 +178,16 @@ public class SocketManager {
 		{
 			System.err.println("Input Data Packet Is NULL");
 			return null;
+		}else if(pack.getData().length<=4)
+		{
+			System.err.println("Input Data Packet has not data payload");
+			return null;
 		}
+		
 		byte[] buf = new byte[pack.getLength()-4];
 		
 		System.arraycopy(pack.getData(), 4, buf, 0, pack.getLength()-4);
+		
 		return buf;
 	}	
 	
