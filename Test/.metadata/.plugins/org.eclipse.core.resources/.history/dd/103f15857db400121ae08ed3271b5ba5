@@ -1,0 +1,25 @@
+
+public class ReceiverSocketManager extends SocketManager implements Runnable {
+
+	private FileCombinerPlus fc = null;
+	
+	
+	public ReceiverSocketManager() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

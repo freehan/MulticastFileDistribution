@@ -1,0 +1,54 @@
+import java.net.DatagramPacket;
+
+
+public class ReceiverSocketManager extends SocketManager implements Runnable {
+
+	private FileCombinerPlus fc = null;
+	
+	private Thread t;
+	
+	public ReceiverSocketManager(FileCombinerPlus fc) {
+		super();
+		this.fc = fc;
+		t = new Thread(this);
+		t.setDaemon(true);
+		t.start();
+	}
+	
+	@Override
+	public void run() {
+		
+		while(fc.getNextSeqNum() <= fc.getBlockNum())
+		{
+			DatagramPacket pack = this.recievePacket();
+			
+			if(pack == null){
+				System.err.println("Socket Failed to Receive a Packet");
+				continue;
+			}
+			else
+			{
+				int seqN = SocketManager.getPacketSeqNum(pack);
+//				System.out.println("Receive data packet:"+ seqN);
+				if(seqN >= fc.getNextSeqNum() && !fc.isWritten(pack))
+				{
+					fc.putDatapacketIntoBuffer(pack);
+					fc.restart();
+				}
+				
+			}		
+		}
+		
+		System.out.println("Receiver Listener Ended with fc.NextSeqNum:"+fc.getNextSeqNum());
+		this.finalize();
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+
+}

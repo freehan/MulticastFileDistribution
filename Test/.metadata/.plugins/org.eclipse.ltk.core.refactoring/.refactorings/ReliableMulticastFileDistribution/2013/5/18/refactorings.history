@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;RecieverSocketManager&apos; to &apos;ReceiverSocketManager&apos;&#x0A;- Original project: &apos;ReliableMulticastFileDistribution&apos;&#x0A;- Original element: &apos;RecieverSocketManager&apos;&#x0A;- Renamed element: &apos;ReceiverSocketManager&apos;&#x0A;- Update references to refactored element&#x0A;- Rename similarly named elements&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RecieverSocketManager&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{RecieverSocketManager.java[RecieverSocketManager" matchStrategy="1" name="ReceiverSocketManager" qualified="false" references="true" similarDeclarations="true" stamp="1367646144286" textual="true" version="1.0"/>
+</session>

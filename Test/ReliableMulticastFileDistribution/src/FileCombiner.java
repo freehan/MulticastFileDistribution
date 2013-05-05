@@ -95,8 +95,6 @@ public class FileCombiner extends FileSeperator implements Runnable{
 	{
 		this.lastSeqNum++;
 		return writeByteToFile(pack.getData(), 4, pack.getLength()-4);
-		 
-		
 	}
 	
 	//Find out lags in the buffer

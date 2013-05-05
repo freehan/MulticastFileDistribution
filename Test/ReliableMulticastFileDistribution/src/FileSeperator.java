@@ -10,7 +10,7 @@ public class FileSeperator {
 	String fileName = null;
 	long fileSize = 0;
 	long blockNum = 0;		//How many blocks could this file be seperated to according to the blockSize;
-	long blockSize = 1020L; 	//1500 - 20 (IPv4 header) - 8 (UDP header)  - 4 (SeqNum)  = 1468
+	long blockSize = 1468L; 	//1500 - 20 (IPv4 header) - 8 (UDP header)  - 4 (SeqNum)  = 1468 (1400 to be safe)
 	RandomAccessFile raf = null;
 	
 	

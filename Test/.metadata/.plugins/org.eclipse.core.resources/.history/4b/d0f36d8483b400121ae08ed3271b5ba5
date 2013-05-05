@@ -1,0 +1,43 @@
+
+public class Sender {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		FileSeperator sep = new FileSeperator("/Users/Freehan/Desktop/Test/1.txt");
+		
+		FileSeperator sep = new FileSeperator("/Users/Freehan/Desktop/Test/Test");
+		sep.getFileAttribute();
+		sep.printFileAttribute();
+		
+		SocketManager Sender = new SocketManager();
+		
+		SenderRecoveryListener srl = new SenderRecoveryListener(Sender, sep);
+		
+//		
+		int seqNum=1;
+		while(seqNum<=sep.getBlockNum())
+		{
+			try {
+				Thread.sleep(1);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			//Test Recovery Request
+			if()
+			{
+			byte[] buf = sep.getDataBlock(seqNum);
+			
+			Sender.sendStdPacket(seqNum, buf);
+			}
+			seqNum++;
+		}
+		Sender.finalize();		
+	}
+
+}

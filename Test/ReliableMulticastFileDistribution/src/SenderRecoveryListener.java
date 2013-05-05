@@ -1,4 +1,5 @@
 import java.net.DatagramPacket;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
@@ -51,30 +52,57 @@ public class SenderRecoveryListener implements Runnable {
 
 	@Override
 	public void run() {
-		while(true)
+		try{
+			while(true)
+			{
+				DatagramPacket pack = sm.recievePacket();
+				if(pack == null)
+					break;
+				int seqN = SocketManager.getPacketSeqNum(pack);
+	//			System.out.println("Listener Received Packet SeqN: "+ seqN);
+	
+				if(seqN>0){
+					if(hsContains(seqN))
+						hsRemove(seqN);
+	
+				}
+				else if(seqN < 0){
+					//Calculate TimeElapse
+					Date now = new Date();
+					byte[] timestamp = SocketManager.getPacketData(pack);
+					long timeElapse = now.getTime() - SocketManager.convertBytesToLong(timestamp);
+					System.out.println("Recovery Request Packet:"+ seqN+" TimeElpase:"+timeElapse);
+		
+					
+					seqN = Math.abs(seqN);
+	
+					//if Have not start a resend packet task
+					if(!hsContains(seqN))
+					{
+						hsAdd(seqN);
+						resendTaskPool.execute(new ResendPacketTask(sm, fs, seqN, timeElapse));
+	
+					}			
+				}
+			}
+		}catch(Exception e)
 		{
-			DatagramPacket pack = sm.recievePacket();
-			int seqN = SocketManager.getPacketSeqNum(pack);
-			System.out.println("Listener Received Packet SeqN: "+ seqN);
-
-			if(seqN>0){
-				if(hsContains(seqN))
-					hsRemove(seqN);
-
-			}
-			else if(seqN < 0){
-
-				seqN = Math.abs(seqN);
-
-				//if Have not start a resend packet task
-				if(!hsContains(seqN))
-				{
-					hsAdd(seqN);
-					resendTaskPool.execute(new ResendPacketTask(sm, fs, seqN, 0L));
-
-				}			
-			}
+			System.err.println("Recovery Listener Exception. Listener Shut Down");
+			e.printStackTrace();
+			
 		}
+		
+		System.out.println("Sender Recovery Listener Listener Shutting Down");
+		
+		resendTaskPool.shutdownNow();
+		
+//		try {
+//			Thread.currentThread().join();
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
 	}
 
 	public synchronized boolean hsContains(int seq)
@@ -101,33 +129,41 @@ public class SenderRecoveryListener implements Runnable {
 		int seqN = 0;
 		SocketManager sm = null;
 		FileSeperator fs = null;
-		long randomTimeElapse = 0;
+		long timeElapse = 0;
 
 		public ResendPacketTask(SocketManager socket, FileSeperator seperator, int seqNum, long timeElapse)
 		{
 			sm = socket;
 			fs = seperator;
 			seqN = seqNum;
-			randomTimeElapse = timeElapse;
+			this.timeElapse = timeElapse;
 		}
 
 
 		@Override
 		public void run() {
 
+			System.out.println("RecoveryListener Starts");
+			
 			Random r = new Random();
 			
 			
 			//Random Backoff
 			try {
-				if(randomTimeElapse <= 0)
+				if(this.timeElapse <= 0)
 				{
-					int timer = r.nextInt(1000);
-					TimeUnit.MILLISECONDS.sleep(timer+100);
+					int timer = r.nextInt(100);
+					TimeUnit.MILLISECONDS.sleep(timer+10);
 				}else
 				{
 					//Have not implemented yet
-					//random timer setting
+					//random timer setting  
+					// Random Timer Range from 2*timeElapse - 10*timeElpse
+					int timer = r.nextInt((int)this.timeElapse*8);
+					
+					System.out.println("Random Backoff:"+ timer);
+					TimeUnit.MILLISECONDS.sleep(timer+(int)this.timeElapse*2);
+					
 				}
 				//				else
 			} catch (InterruptedException e) {
