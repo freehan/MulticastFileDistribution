@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.LinkedList;
+import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -24,6 +25,17 @@ public class FileCombinerPlus extends FileSeperator implements Runnable{
 	
 	private Object lockForLastRecoveryRequestSeqNum = new Object();
 	private volatile int lastRecoveryRequestSeqNum = 0;
+	
+	private volatile int recoverySeqNumReceived = 0;
+	
+	
+	public int getRecoverySeqNumReceived() {
+		return recoverySeqNumReceived;
+	}
+
+	public void setRecoverySeqNumReceived(int recoverySeqNumReceived) {
+		this.recoverySeqNumReceived = recoverySeqNumReceived;
+	}
 
 	public int getNextSeqNum() {
 			return nextSeqNum;
@@ -60,6 +72,12 @@ public class FileCombinerPlus extends FileSeperator implements Runnable{
 		synchronized(buff){
 			this.buff.offer(pack);
 		}
+		
+		//to prevent further recovery request being sent 
+		int seqN = SocketManager.getPacketSeqNum(pack);
+		if(seqN == this.getNextSeqNum())
+			this.setRecoverySeqNumReceived(seqN);
+
 	}
 
 	public DatagramPacket getDatapacketFromBuffer()
@@ -148,7 +166,10 @@ public class FileCombinerPlus extends FileSeperator implements Runnable{
 		if(getNextSeqNum()!=1)
 		{
 //			System.out.println("In here trackerSeqNum:"+getLastRecoveryRequestSeqNum());
-			if(this.getLastRecoveryRequestSeqNum()==0 || lock_prevent_counter>200)
+			if(this.getLastRecoveryRequestSeqNum()==0 || 
+					lock_prevent_counter>300 && 
+					getRecoverySeqNumReceived() != getNextSeqNum())
+				// the 3rd condition is to prevent sending recovery request after received the data packet in the buffer
 			{
 				lock_prevent_counter = 0;
 				this.setLastRecoveryRequestSeqNum(getNextSeqNum());
@@ -176,7 +197,7 @@ public class FileCombinerPlus extends FileSeperator implements Runnable{
 					TimeUnit.MILLISECONDS.sleep(200);
 				
 					//check if file transmission have begun
-					lock_prevent_counter = recoveryRequestScheduler(lock_prevent_counter,200);
+					lock_prevent_counter = recoveryRequestScheduler(lock_prevent_counter,100);
 					//if true, send recovery request packet
 //					if(getNextSeqNum()!=1)
 //					{
@@ -238,13 +259,6 @@ public class FileCombinerPlus extends FileSeperator implements Runnable{
 		
 		//Shutdown Reciever Listener
 		sm.finalize();
-		
-//		try {
-//			Thread.currentThread().join();
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 	}
 	
 	public int getLastRecoveryRequestSeqNum() {
@@ -270,7 +284,10 @@ public class FileCombinerPlus extends FileSeperator implements Runnable{
 	}
 
 	class RecoveryRequestTask implements Runnable{
-
+		
+		private final int DEFAULT_RANDOM_BACKOFF =100;
+		private final int DEFAULT_RANDOM_BACKOFF_RANGE =200;
+		
 		private int seqNum;
 		
 		public RecoveryRequestTask(int seqN)
@@ -282,7 +299,8 @@ public class FileCombinerPlus extends FileSeperator implements Runnable{
 		public void run() {
 			
 			try {
-				TimeUnit.MILLISECONDS.sleep(50);
+				Random r = new Random();
+				TimeUnit.MILLISECONDS.sleep(DEFAULT_RANDOM_BACKOFF + r.nextInt(DEFAULT_RANDOM_BACKOFF_RANGE));
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				//e.printStackTrace();

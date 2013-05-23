@@ -43,21 +43,23 @@
 <part id="9"/>
 <part id="7"/>
 <part id="10"/>
+<part id="11"/>
+<part id="12"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SenderRecoveryListener.java" partName="SenderRecoveryListener.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/SenderRecoveryListener.java" title="SenderRecoveryListener.java" tooltip="ReliableMulticastFileDistribution/src/SenderRecoveryListener.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/SenderRecoveryListener.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1074" selectionTopPixel="148"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3692" selectionTopPixel="2693"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tester.java" partName="Tester.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/Tester.java" title="Tester.java" tooltip="ReliableMulticastFileDistribution/src/Tester.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/Tester.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1290" selectionTopPixel="344"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1120" selectionTopPixel="298"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SocketManager.java" partName="SocketManager.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/SocketManager.java" title="SocketManager.java" tooltip="ReliableMulticastFileDistribution/src/SocketManager.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/SocketManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3808" selectionTopPixel="2454"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3369" selectionTopPixel="2176"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileSeperator.java" partName="FileSeperator.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/FileSeperator.java" title="FileSeperator.java" tooltip="ReliableMulticastFileDistribution/src/FileSeperator.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/FileSeperator.java"/>
@@ -67,17 +69,17 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/FileCombiner.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3061" selectionTopPixel="2380"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileCombinerPlus.java" partName="FileCombinerPlus.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/FileCombinerPlus.java" title="FileCombinerPlus.java" tooltip="ReliableMulticastFileDistribution/src/FileCombinerPlus.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileCombinerPlus.java" partName="FileCombinerPlus.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/FileCombinerPlus.java" title="FileCombinerPlus.java" tooltip="ReliableMulticastFileDistribution/src/FileCombinerPlus.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/FileCombinerPlus.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6917" selectionTopPixel="4592"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1942" selectionTopPixel="901"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sender.java" partName="Sender.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/Sender.java" title="Sender.java" tooltip="ReliableMulticastFileDistribution/src/Sender.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/Sender.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1223" selectionTopPixel="400"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="560" selectionTopPixel="774"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ReceiverSocketManager.java" partName="ReceiverSocketManager.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/ReceiverSocketManager.java" title="ReceiverSocketManager.java" tooltip="ReliableMulticastFileDistribution/src/ReceiverSocketManager.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/ReceiverSocketManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="777" selectionTopPixel="474"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="406" selectionTopPixel="846"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.ClassFileEditor" name="Thread.class" partName="Thread.class" title="Thread.class" tooltip="java.lang.Thread" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=FileCombination/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_15.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Thread.class"/>
@@ -87,12 +89,26 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/ReceiverRecoveryListener.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="260" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Receiver.java" partName="Receiver.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/Receiver.java" title="Receiver.java" tooltip="ReliableMulticastFileDistribution/src/Receiver.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Receiver.java" partName="Receiver.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/ReliableMulticastFileDistribution/src/Receiver.java" title="Receiver.java" tooltip="ReliableMulticastFileDistribution/src/Receiver.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ReliableMulticastFileDistribution/src/Receiver.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1506" selectionTopPixel="404"/>
+<editorState selectionHorizontalPixel="8" selectionLength="0" selectionOffset="1589" selectionTopPixel="579"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MulticastSocketManager.java" partName="MulticastSocketManager.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/Test/src/MulticastSocketManager.java" title="MulticastSocketManager.java" tooltip="Test/src/MulticastSocketManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Test/src/MulticastSocketManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="721" selectionTopPixel="2083"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="another.java" partName="another.java" path="/Users/Freehan/Documents/Coding/MasterProject/MulticastFileDistribution/Test/Test/src/another.java" title="another.java" tooltip="Test/src/another.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Test/src/another.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="785" selectionTopPixel="134"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
+</view>
 <view id="org.eclipse.ui.console.ConsoleView:Console View #2" partName="Console">
 <viewState/>
 </view>
@@ -118,6 +134,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (43 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -250,15 +269,16 @@
 <perspective_action id="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView:Console View #1"/>
 <view id="org.eclipse.ui.console.ConsoleView:Console View #2"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -286,14 +306,14 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView:Console View #2" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView:Console View #1" label="Console"/>
 <page content="org.eclipse.ui.console.ConsoleView:Console View #2" label="Console"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -303,6 +323,7 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
 </presentation>
 </folder>
 </info>
@@ -453,164 +474,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/SenderRecoveryListener.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/ReceiverRecoveryListener.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/Receiver.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/SocketManager.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/Sender.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/ReceiverRecoveryListener.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/SenderRecoveryListener.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/FileCombinerPlus.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/SocketManager.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/ReceiverSocketManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ReliableMulticastFileDistribution/src/SenderRecoveryListener.java"/>
 </editors>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1134" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="1789" y="23"/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="470" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="1852" y="4"/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="474" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="2098" y="23"/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1134" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="2142" y="4"/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1134" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="1789" y="23"/>
 </item>
-<item historyLabel="ReceiverRecoveryListener.java" index="1">
-<position info="not_deleted" x="232" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="1852" y="4"/>
 </item>
-<item historyLabel="ReceiverRecoveryListener.java" index="1">
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="4618" y="3"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="4766" y="4"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="1461" y="0"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="1461" y="0"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="6308" y="24"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="2688" y="24"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="4094" y="28"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="461" y="98"/>
+</item>
+<item historyLabel="SocketManager.java" index="3">
+<position info="not_deleted" x="3369" y="0"/>
+</item>
+<item historyLabel="Receiver.java" index="0">
 <position/>
 </item>
-<item historyLabel="ReceiverRecoveryListener.java" index="1">
+<item historyLabel="ReceiverSocketManager.java" index="4">
+<position info="not_deleted" x="1048" y="0"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="4202" y="13"/>
+</item>
+<item historyLabel="SocketManager.java" index="3">
+<position info="not_deleted" x="3369" y="0"/>
+</item>
+<item historyLabel="Receiver.java" index="0">
 <position/>
 </item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="317" y="7"/>
-</item>
-<item historyLabel="ReceiverRecoveryListener.java" index="1">
-<position info="not_deleted" x="230" y="0"/>
-</item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="317" y="7"/>
-</item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="2941" y="0"/>
-</item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="2962" y="0"/>
-</item>
-<item historyLabel="ReceiverRecoveryListener.java" index="1">
-<position info="not_deleted" x="286" y="0"/>
-</item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1134" y="0"/>
-</item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1132" y="0"/>
-</item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1533" y="0"/>
-</item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="3401" y="0"/>
-</item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1533" y="0"/>
-</item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="3401" y="0"/>
-</item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="1207" y="0"/>
-</item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="1209" y="0"/>
-</item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1533" y="0"/>
-</item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="1094" y="0"/>
-</item>
-<item historyLabel="Receiver.java" index="2">
+<item historyLabel="Receiver.java" index="0">
 <position/>
 </item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="1669" y="165"/>
+<item historyLabel="Receiver.java" index="0">
+<position/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1531" y="0"/>
+<item historyLabel="ReceiverSocketManager.java" index="4">
+<position info="not_deleted" x="1048" y="0"/>
 </item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="1206" y="0"/>
+<item historyLabel="Receiver.java" index="0">
+<position/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1531" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="4247" y="0"/>
 </item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="3554" y="0"/>
+<item historyLabel="Receiver.java" index="0">
+<position info="not_deleted" x="252" y="0"/>
 </item>
-<item historyLabel="ReceiverRecoveryListener.java" index="1">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="Sender.java" index="1">
+<position info="not_deleted" x="957" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="4">
-<position info="not_deleted" x="1355" y="0"/>
+<item historyLabel="Receiver.java" index="0">
+<position info="not_deleted" x="252" y="0"/>
 </item>
-<item historyLabel="SocketManager.java" index="3">
-<position info="not_deleted" x="3826" y="0"/>
+<item historyLabel="Sender.java" index="1">
+<position info="not_deleted" x="1599" y="0"/>
 </item>
-<item historyLabel="ReceiverRecoveryListener.java" index="1">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="Receiver.java" index="0">
+<position info="not_deleted" x="1169" y="23"/>
 </item>
-<item historyLabel="SocketManager.java" index="3">
-<position info="not_deleted" x="3808" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="1789" y="23"/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1114" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="2038" y="0"/>
 </item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="3554" y="0"/>
+<item historyLabel="Receiver.java" index="0">
+<position info="not_deleted" x="1169" y="23"/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="1114" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="709" y="0"/>
+<item historyLabel="Sender.java" index="1">
+<position info="not_deleted" x="229" y="0"/>
 </item>
-<item historyLabel="SocketManager.java" index="3">
-<position info="not_deleted" x="3808" y="0"/>
+<item historyLabel="Receiver.java" index="0">
+<position info="not_deleted" x="1169" y="23"/>
 </item>
-<item historyLabel="SenderRecoveryListener.java" index="0">
-<position info="not_deleted" x="3554" y="0"/>
+<item historyLabel="Sender.java" index="1">
+<position info="not_deleted" x="560" y="0"/>
 </item>
-<item historyLabel="SocketManager.java" index="3">
-<position info="not_deleted" x="3808" y="0"/>
+<item historyLabel="Receiver.java" index="0">
+<position info="not_deleted" x="1589" y="0"/>
 </item>
-<item historyLabel="Sender.java" index="4">
-<position info="not_deleted" x="1223" y="0"/>
+<item historyLabel="ReceiverSocketManager.java" index="4">
+<position info="not_deleted" x="1048" y="0"/>
 </item>
-<item historyLabel="ReceiverRecoveryListener.java" index="1">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="SenderRecoveryListener.java" index="5">
+<position info="not_deleted" x="3692" y="0"/>
 </item>
-<item historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="709" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position/>
 </item>
-<item historyLabel="ReceiverRecoveryListener.java" index="5">
-<position info="not_deleted" x="347" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="4920" y="24"/>
 </item>
-<item historyLabel="SenderRecoveryListener.java" index="6">
-<position info="not_deleted" x="1074" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="3902" y="24"/>
 </item>
-<item historyLabel="ReceiverRecoveryListener.java" index="5">
-<position info="not_deleted" x="260" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="4457" y="19"/>
 </item>
-<item historyLabel="ReceiverSocketManager.java" index="7">
-<position info="not_deleted" x="777" y="0"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="7362" y="19"/>
 </item>
-<item active="true" historyLabel="Receiver.java" index="2">
-<position info="not_deleted" x="443" y="24"/>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="8039" y="0"/>
+</item>
+<item historyLabel="ReceiverSocketManager.java" index="4">
+<position info="not_deleted" x="406" y="0"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="8039" y="0"/>
+</item>
+<item historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="8037" y="0"/>
+</item>
+<item active="true" historyLabel="FileCombinerPlus.java" index="2">
+<position info="not_deleted" x="1789" y="23"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -618,6 +637,14 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@65ddc55f"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -626,10 +653,17 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="another.java" tooltip="Test/src/another.java">
+<persistable path="/Test/src/another.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MulticastSocketManager.java" tooltip="Test/src/MulticastSocketManager.java">
+<persistable path="/Test/src/MulticastSocketManager.java"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AbstractPlainDatagramSocketImpl.class" tooltip="java.net.AbstractPlainDatagramSocketImpl">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FileCombination/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_15.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.net(AbstractPlainDatagramSocketImpl.class"/>
 </file>
@@ -644,9 +678,6 @@
 </file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ThreadPoolExecutor.class" tooltip="java.util.concurrent.ThreadPoolExecutor">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=FileCombination/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_15.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.util.concurrent(ThreadPoolExecutor.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="another.java" tooltip="Test/src/another.java">
-<persistable path="/Test/src/another.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RecieverSocketManager.java" tooltip="ReliableMulticastFileDistribution/src/RecieverSocketManager.java">
 <persistable path="/ReliableMulticastFileDistribution/src/RecieverSocketManager.java"/>
@@ -671,9 +702,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SocketManager.java" tooltip="ReliableMulticastFileDistribution/src/SocketManager.java">
 <persistable path="/ReliableMulticastFileDistribution/src/SocketManager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tester.java" tooltip="ReliableMulticastFileDistribution/src/Tester.java">
-<persistable path="/ReliableMulticastFileDistribution/src/Tester.java"/>
 </file>
 </mruList>
 </workbench>

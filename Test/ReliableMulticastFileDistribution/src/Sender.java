@@ -9,7 +9,7 @@ import org.omg.CORBA.TIMEOUT;
 public class Sender {
 
 	//in seconds
-	public static final int TIME_CONSTRAINT = 50;
+	public static final int TIME_CONSTRAINT = 240;
 	
 	/**
 	 * @param args
@@ -34,7 +34,6 @@ public class Sender {
 		double rate = size / TIME_CONSTRAINT; //blocks per second
 		double iteration = 1*1000*1000*1000 / rate;   //nanosecond per block
 		long iterTime = Math.round(iteration);
-		
 		System.out.println("Iteration: "+ iteration + " iterTime: " + iterTime);
 		
 		long lastTime = System.nanoTime();

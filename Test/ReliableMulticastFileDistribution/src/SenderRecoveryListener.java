@@ -174,7 +174,7 @@ public class SenderRecoveryListener implements Runnable {
 			
 			//Random Backoff
 			try {
-				if(this.timeElapse <= 0)
+				if(this.timeElapse <= 0 ||this.timeElapse >= 1500) //this might indicate the time is not synchronized
 				{
 					int timer = r.nextInt(40);
 					TimeUnit.MILLISECONDS.sleep(timer+5);
