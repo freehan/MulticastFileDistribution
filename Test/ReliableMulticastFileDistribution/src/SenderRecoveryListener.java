@@ -42,6 +42,11 @@ public class SenderRecoveryListener implements Runnable {
 		resendTaskPool = Executors.newFixedThreadPool(poolSize);
 
 	}
+	
+	public void startResendTask(int seqN, long timeElapse)
+	{
+		resendTaskPool.execute(new ResendPacketTask(sm,fs,seqN,timeElapse));
+	}
 
 
 
@@ -105,19 +110,38 @@ public class SenderRecoveryListener implements Runnable {
 		
 	}
 
-	public synchronized boolean hsContains(int seq)
+	public boolean hsContains(int seq)
 	{
-		return hs.contains(seq);
+		synchronized(hs)
+		{
+			return hs.contains(seq);
+		}
 	}
 
-	public synchronized boolean hsAdd(int seq)
+	public  boolean hsAdd(int seq)
 	{
-		return hs.add(seq);
+		synchronized(hs)
+		{
+			return hs.add(seq);
+		}
 	}
 
-	public synchronized boolean hsRemove(int seq)
+	public boolean hsRemove(int seq)
 	{
-		return hs.remove(seq);
+		synchronized(hs)
+		{
+			return hs.remove(seq);
+		}
+	}
+	
+	public void hsContainsAndRemove(int seq)
+	{
+		synchronized(hs)
+		{
+			if(hs.contains(seq))
+				hs.remove(seq);
+		}
+		
 	}
 
 
@@ -143,7 +167,7 @@ public class SenderRecoveryListener implements Runnable {
 		@Override
 		public void run() {
 
-			System.out.println("RecoveryListener Starts");
+//			System.out.println("RecoveryListener Starts");
 			
 			Random r = new Random();
 			
@@ -152,8 +176,8 @@ public class SenderRecoveryListener implements Runnable {
 			try {
 				if(this.timeElapse <= 0)
 				{
-					int timer = r.nextInt(100);
-					TimeUnit.MILLISECONDS.sleep(timer+10);
+					int timer = r.nextInt(40);
+					TimeUnit.MILLISECONDS.sleep(timer+5);
 				}else
 				{
 					//Have not implemented yet

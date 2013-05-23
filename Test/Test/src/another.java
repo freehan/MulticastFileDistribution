@@ -30,7 +30,7 @@ public class another {
 			FileWriter fw = new FileWriter("/Users/Freehan/Desktop/Test/Test1");
 			Random rd = new Random();
 			
-			for(int i=0;i<40*1024;i++)
+			for(int i=0;i<100*1000*1000;i++)
 			{
 				int some = rd.nextInt(255);
 				fw.append((char)some);

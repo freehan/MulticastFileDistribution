@@ -170,7 +170,7 @@ public class SocketManager {
 		} catch (IOException e) {
 			System.err.println("Receive Data Packet Failed");
 			e.printStackTrace();
-		}
+		} 
 		
 		return null;
 	}

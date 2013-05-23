@@ -282,10 +282,10 @@ public class FileCombinerPlus extends FileSeperator implements Runnable{
 		public void run() {
 			
 			try {
-				TimeUnit.MILLISECONDS.sleep(100);
+				TimeUnit.MILLISECONDS.sleep(50);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				//e.printStackTrace();
 			}
 			
 			if(getNextSeqNum()<= this.seqNum)
